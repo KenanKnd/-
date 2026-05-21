@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Reveal - Who shares wins</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'reveal-cream': '#f5f2e8',
+            'reveal-dark': '#0c1214',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">.arch-background { position: absolute; top: 50%; left: 50%; transform: translateX(-50%); width: 160%; height: 1200px; border-radius: 50% 50% 0 0; background: linear-gradient(to right, #4ade80, #2dd4bf, #3b82f6, #8b5cf6); z-index: 0; pointer-events: none; mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); filter: blur(40px); } h1, h2 { letter-spacing: -0.02em; }</style>
+</head>
+<body class="bg-reveal-cream font-sans text-reveal-dark min-h-screen overflow-x-hidden">
+<!-- BEGIN: Navigation -->
+<header class="z-50 px-8 py-6 flex items-center justify-between sticky top-0 bg-reveal-cream/80 backdrop-blur-md">
+<!-- Logo -->
+<div class="text-2xl font-black tracking-tighter" data-purpose="brand-logo">MARKA&nbsp;</div>
+<!-- Floating Navigation Bar -->
+<nav class="hidden md:flex items-center space-x-1 bg-white/30 backdrop-blur-md border border-gray-300/50 rounded-full px-2 py-1.5" data-purpose="main-nav">
+<a class="px-4 py-2 text-sm font-medium hover:text-gray-600 transition-colors" href="#">Ana sayfa</a>
+<a class="px-4 py-2 text-sm font-medium hover:text-gray-600 transition-colors" href="#">Özellikler</a>
+<a class="px-4 py-2 text-sm font-medium hover:text-gray-600 transition-colors" href="#">Ürünler</a>
+<a class="px-4 py-2 text-sm font-medium hover:text-gray-600 transition-colors" href="#">İletişim</a>
+<a class="ml-2 px-6 py-2.5 bg-reveal-dark text-white text-sm font-medium rounded-full hover:bg-opacity-90 transition-all" href="#">Ücretsiz dene</a>
+</nav>
+<!-- Right Side Icon/Menu -->
+<div class="flex items-center" data-purpose="header-icons">
+<div class="w-10 h-10 border-2 border-reveal-dark rounded-md flex items-center justify-center p-1">
+<svg class="w-full h-full fill-current" viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path>
+</svg>
+</div>
+</div>
+</header>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
+<main class="relative flex flex-col items-center text-center px-6 pt-20 pb-20">
+<!-- Main Headline -->
+<h1 class="text-7xl md:text-[120px] font-serif font-bold leading-tight mb-8 tracking-tight relative z-10" data-purpose="hero-title">Neden biz?</h1>
+<!-- Hero Description -->
+<div class="max-w-7xl mx-auto mb-16 relative z-10 grid grid-cols-1 md:grid-cols-10 gap-12 items-center" data-purpose="hero-description">
+<div class="md:col-span-6 text-left pl-12">
+<p class="text-xl md:text-2xl leading-relaxed text-gray-800">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+</div>
+<div class="md:col-span-4 w-full aspect-video bg-gray-200/50 backdrop-blur-sm border-2 border-dashed border-gray-400 rounded-3xl flex flex-col items-center justify-center text-gray-500 overflow-hidden group hover:border-reveal-dark transition-colors">
+<span class="material-symbols-outlined text-5xl mb-2">play_circle</span>
+<span class="font-medium">Tanıtım Videosu</span>
+</div>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 mb-32 relative z-10" data-purpose="hero-ctas">
+<button class="px-10 py-4 bg-reveal-dark text-white rounded-full text-lg font-medium hover:scale-105 transition-transform">Ücretsiz dene&nbsp;</button>
+<button class="px-10 py-4 border border-reveal-dark text-reveal-dark rounded-full text-lg font-medium hover:bg-reveal-dark hover:text-white transition-all">Oturum aç</button>
+</div>
+<!-- BACKGROUND BAND ELEMENT -->
+<div class="arch-background"></div>
+<!-- Foreground Content Below CTAs -->
+<div class="relative z-10 mt-12 w-full max-w-7xl mx-auto flex flex-col items-center">
+<h2 class="text-6xl md:text-[100px] font-serif font-bold tracking-tight text-reveal-dark" data-purpose="sub-section-title">
+        Collaborative Growth
+      </h2>
+</div>
+</main>
+<!-- END: Hero Section -->
+
+
+</body></html>
